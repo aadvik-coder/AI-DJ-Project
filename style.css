@@ -1,0 +1,89 @@
+body {
+    background: linear-gradient(to right top, #348feb, #4634eb, #9b34eb, #504aff, #5c9aff);
+    font-family: 'Zen Tokyo Zoo', cursive;
+}
+
+.heading {
+    font-size: 23px;
+    width: 100%;
+    margin: 0px;
+    background: linear-gradient(#4d4dff 0%, #8e4dff 100%);
+}
+
+.note {
+    font-size: 15px;
+    color: #63acff;
+}
+
+.div_speed {
+    float: left;
+}
+
+.div_disk_img {
+    width: 200px;
+    border-radius: 100px;
+}
+
+#speed {
+    font-size: 23px;
+    margin: 15px;
+    box-shadow: 5px 5px 5px #2d219c;
+}
+
+.div_volume {
+    float: right;
+}
+
+#volume {
+    font-size: 23px;
+    margin: 15px;
+    box-shadow: 5px 5px 5px #2d219c;
+}
+
+.p_tag {
+    font-size: 25px;
+    background: linear-gradient(#4d4dff 0%, #8e4dff 100%);
+    border-radius: 5px;
+    width: 130px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 5px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    box-shadow: 2px 2px 5px grey;
+}
+canvas {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border-radius: 20px;
+}
+
+@keyframes example {
+   0%{
+       box-shadow: 5px 5px 5px #2f6aad;
+       border: 5px solid #348feb;
+
+   }
+   25%{
+    box-shadow: 5px 5px 5px #3b3bad;
+    border: 5px solid #4634eb;
+
+   }
+   50%{
+    box-shadow: 5px 5px 5px #7e3bad;
+    border: 5px solid #9b34eb;
+
+    }
+    75%{
+    box-shadow: 5px 5px 5px #413bad;
+    border: 5px solid #504aff;
+
+    }
+    100%{
+    box-shadow: 5px 5px 5px #3b6dad;
+    border: 5px solid #5c9aff;
+
+    }
+}
